@@ -4,6 +4,7 @@ FloatPlaceholder jquery plugin dedicated to forms
 Initialization
 
 Required Jquery
+
 Add Sources css and js
 
 Html
