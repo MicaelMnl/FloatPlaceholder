@@ -12,7 +12,7 @@
                 {
                     var $input = $(this);
 
-                    if (['checkbox', 'radio', 'hidden'].indexOf($input.attr('type')) === -1)
+                    if (['checkbox', 'radio', 'hidden', 'submit'].indexOf($input.attr('type')) === -1)
                     {
                         var $parent = $input.parents('div').first().addClass('float-placeholder');
 
