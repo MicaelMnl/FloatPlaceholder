@@ -1,5 +1,5 @@
 (function($){
-	$.fn.floatPlaceholder = function()
+    $.fn.floatPlaceholder = function()
     {
 
         var methods =
@@ -8,14 +8,15 @@
             {
                 var  $inputs = $(this);
 
-               $inputs.each(function ()
+                $inputs.each(function ()
                 {
                     var $input = $(this);
 
-                    if (['checkbox', 'radio'].indexOf($input.attr('type')) === -1)
+                    if (['checkbox', 'radio', 'hidden'].indexOf($input.attr('type')) === -1)
                     {
                         var $parent = $input.parents('div').first().addClass('float-placeholder');
 
+                        console.log($parent);
                         var $label = $parent.find('label').first();
                         $label.addClass('float-placeholder-label');
 
@@ -62,4 +63,3 @@
 
     };
 })(jQuery);
-
