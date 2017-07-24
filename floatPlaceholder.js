@@ -16,7 +16,6 @@
                     {
                         var $parent = $input.parents('div').first().addClass('float-placeholder');
 
-                        console.log($parent);
                         var $label = $parent.find('label').first();
                         $label.addClass('float-placeholder-label');
 
